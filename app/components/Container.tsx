@@ -10,6 +10,7 @@ const Container: React.FC<ContainerProps> = ({children}) => {
         max-w-[2520px]
         py-3
         mx-auto
+        2xl:px-60
         lg:px-20
         md:px-10
         sm:px-5
