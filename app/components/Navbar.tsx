@@ -1,5 +1,7 @@
 import Container from './Container'
 import { Nunito } from 'next/font/google'
+import Link from 'next/link'
+
 
 const logo = Nunito({
    subsets: ['latin'],
@@ -9,20 +11,23 @@ const logo = Nunito({
 
 const Navbar = () => {
   return (
-    <div className="fixed w-full bg-white z-10 text-4xl shadow-md">
+    <div className=" w-full bg-white z-10 ">
         <Container>
             <div className="flex flex-row justify-between gap-3 md:gap-0">
                 {/*Logo will go here*/}
-                <h2 className={` ${logo.variable} font-mono font-semibold tracking-tighter `}>Constantine</h2>
+                <Link href='/'>
+                  <h2 className={` ${logo.variable} font-mono font-semibold tracking-tighter text-4xl `}>Constantine</h2>
+                </Link>
                 <div className=" whitespace-nowrap hidden md:flex items-center justify-between mx-auto gap-10 text-xl">
                   <p className='cursor-pointer font-semibold'>Home</p>
                   <p className='cursor-pointer'>About</p>
                   <p className='cursor-pointer'>Pricing</p>
                   <p className='cursor-pointer'>Contact Us</p>
                 </div>
-                <button className='text-base whitespace-nowrap bg-gray-800 text-white px-6 py-2 rounded-md'>
-                  Book Now
-                </button>
+                <a href="#_" className=" text-lg rounded px-5 py-2.5 overflow-hidden group bg-seagreen relative hover:bg-gradient-to-r hover:from-seagreen hover:to-emerald-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-emerald-400 transition-all ease-out duration-300">
+                  <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+                  <span className="relative whitespace-nowrap">Enroll Now</span>
+                </a>
             </div>
         </Container>
     </div>
