@@ -1,6 +1,8 @@
 import './globals.css'
 import { Nunito } from 'next/font/google'
 import Navbar from './components/Navbar'
+import Head from 'next/head'
+
 const font = Nunito({ subsets: ['latin'] })
 
 export const metadata = {
@@ -14,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={font.className}>
+    <html lang="en">           
+      <body>
         <Navbar/>
         {children}
       </body>
