@@ -2,8 +2,6 @@ import Image from 'next/image'
 import car from '../assets/car.png'
 import sideview from '../assets/sideview.png'
 import Container from '../components/Container'
-import Button from '../components/Button'
-
 
 export default function Home() {
   return (
@@ -14,7 +12,7 @@ export default function Home() {
           <h1 className='bg-gradient-to-r from-seagreen to-blue-500 bg-clip-text text-transparent bg-[400%] text-[9rem] -mt-20 -mb-5 max-md:text-[7rem] max-md:text-center max-md:-mt-14 max-sm:text-[5rem] max-sm:-mt-10 '>Awareness</h1>
         </div>
         <p className='font-semibold text-slate-300 text-[1.8rem] tracking-tighter w-[45rem] mb-5 max-md:text-[1.5rem] max-md:text-center max-md:mx-auto max-md:w-[35rem] max-sm:text-[1rem] max-sm:w-[20rem]'>
-          Get yourself behind the wheel with the aid of our experienced driving instructors. You'll be able to pass your test with confidence.
+          Get yourself behind the wheel with the aid of our experienced driving instructors. You&apos;ll be able to pass your test with confidence.
         </p>
 
         {/*Button*/}
