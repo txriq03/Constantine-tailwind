@@ -11,12 +11,12 @@ const logo = Nunito({
 
 const Navbar = () => {
   return (
-    <div className=" w-full bg-white z-10 ">
+    <div className=" w-full bg-transparent z-10 ">
         <Container>
-            <div className="flex flex-row justify-between gap-3 md:gap-0">
+            <div className=" flex text-white flex-row justify-between gap-3 md:gap-0">
                 {/*Logo will go here*/}
                 <Link href='/'>
-                  <h2 className={` ${logo.variable} font-mono font-semibold tracking-tighter text-4xl `}>Constantine</h2>
+                  <h2 className={` ${logo.variable} font-mono font-semibold tracking-tighter mt-1 text-4xl `}>Constantine</h2>
                 </Link>
                 <div className=" whitespace-nowrap hidden md:flex items-center justify-between mx-auto gap-10 text-xl">
                   <p className='cursor-pointer font-semibold'>Home</p>

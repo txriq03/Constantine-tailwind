@@ -16,6 +16,9 @@ module.exports = {
         babypowder: '#fdfffc',
         redpantone: '#e71d36',
         orangepeel: '#ff9f1c'
+      },
+      screens: {
+        '3xl': '1600px'
       }
     },
   },
