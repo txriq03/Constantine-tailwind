@@ -14,7 +14,7 @@ const Navbar = () => {
             <div className="flex flex-row justify-between gap-3 md:gap-0">
                 {/*Logo will go here*/}
                 <h2 className={` ${logo.variable} font-mono font-semibold tracking-tighter `}>Constantine</h2>
-                <div className="flex whitespace-nowrap invisible md:visible items-center justify-between mx-auto gap-10 text-xl">
+                <div className=" whitespace-nowrap hidden md:flex items-center justify-between mx-auto gap-10 text-xl">
                   <p className='cursor-pointer font-semibold'>Home</p>
                   <p className='cursor-pointer'>About</p>
                   <p className='cursor-pointer'>Pricing</p>
