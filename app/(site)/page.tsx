@@ -23,7 +23,7 @@ export default function Home() {
           </span>
         </a>
         
-        <Image className='object-contain absolute top-60 -right-80' alt='car' src={sideview} height={1000} width={1000} />
+        <Image className='object-contain absolute top-60 -right-[20rem] max-2xl:-right-[30rem] max-xl:-right-[40rem] max-lg:-right-[50rem]' alt='car' src={sideview} height={1000} width={1000} />
       </Container>
     </main>
   )
