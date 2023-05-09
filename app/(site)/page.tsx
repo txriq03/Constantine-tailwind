@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import sideview from '../assets/sideview.png'
+import sideview from '../assets/sideviewps.png'
 import speedsign from '../assets/speedsign.png'
 import Container from '../components/Container'
 
@@ -46,9 +46,8 @@ export default function Home() {
           </span>
         </a>
         
-        <div className='absolute -z-10 bg-white rounded-full w-[1100px] h-[1100px] -right-[25rem] -top-[200px] '/>
+        <div className='absolute -z-10 bg-white rounded-full w-[1100px] h-[1100px] -right-[25rem] -top-[200px] 2xl:-right-[30rem] xl:-right-[35rem] lg:-right-[40rem] max-md:hidden '/>
         <Image className=' z-[10] object-contain w-70 h-auto absolute top-[15rem] -right-[20rem] max-2xl:-right-[30rem] max-xl:-right-[40rem] max-lg:-right-[50rem] 3xl:top-[16rem] 3xl:w-[1200px]' alt='car' priority src={sideview} height={1000} width={1000} />
-        {/* <Image className='object-contain absolute top-[10rem] right-[40rem] brightness-[.9] ' alt='Speed sign' src={speedsign} height={100} width={100}/> */}
       </Container>
     </main>
   )
