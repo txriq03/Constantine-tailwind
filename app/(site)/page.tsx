@@ -15,7 +15,7 @@ export default function Home() {
           Get yourself behind the wheel with the aid of our experienced driving instructors. You&apos;ll be able to pass your test with confidence.
         </p>
 
-        <div className='mx-auto'>
+        <div >
           {/*Buttons*/}
           <a href="#_" className="relative p-0.5 mb-10 inline-flex items-center justify-center font-semibold overflow-hidden group rounded-md">
             <span className="w-full h-full animate-text bg-gradient-to-br from-cyan-500 via-[#2ebf91] to-blue-500 group-hover:from-cyan-500 group-hover:via-[#2ebf91] group-hover:to-blue-500 absolute"></span>
@@ -32,9 +32,9 @@ export default function Home() {
             </span>
           </a>
 
-          <a href="#_" className="relative ml-5 inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+          <a href="#_" className="relative ml-5 inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
             <span className="w-48 h-48 rounded rotate-[-40deg] animate-text bg-gradient-to-br from-cyan-500 via-[#2ebf91] to-blue-500 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-            <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white text-xl">
+            <span className="relative w-full text-center text-black transition-colors duration-300 ease-in-out group-hover:text-white text-xl">
               Start driving
 
               {/*Academy icon*/}
@@ -50,8 +50,17 @@ export default function Home() {
 
 
         
-        <div className='absolute -z-10 bg-white rounded-full w-[1100px] h-[1100px] -right-[25rem] -top-[200px] 2xl:-right-[30rem] xl:-right-[35rem] lg:-right-[40rem] max-lg:hidden md:-right-[40rem] max-md:hidden '/>
+        <div className=' absolute -z-10 bg-white rounded-full w-[1100px] h-[1100px] -right-[25rem] -top-[200px] 2xl:-right-[30rem] xl:-right-[35rem] lg:-right-[40rem] max-lg:hidden md:-right-[40rem] max-md:hidden '/>
         <Image className=' z-[10] object-contain w-70 h-auto absolute top-[15rem] -right-[20rem] max-2xl:-right-[30rem] max-xl:-right-[40rem] max-lg:-right-[50rem] 3xl:top-[16rem] 3xl:w-[1200px]' alt='car' priority src={sideview} height={1000} width={1000} />
+        
+        {/*Scroll down arrow*/}
+        <svg className="arrows">
+          <path className="a1" d="M0 0 L30 32 L60 0"></path>
+          <path className="a2" d="M0 20 L30 52 L60 20"></path>
+          <path className="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
+        <p className='absolute top-[85vh] text-[#ffffff] left-0 right-0 mx-auto w-[10rem] tracking-wider text-center'>SCROLL DOWN</p>
+
       </Container>
     </main>
   )

@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       animation: {
         text: 'text 5s ease infinite',
-        movedown: ''
+        moveDown: 'moveDown 2s infinite'
       },
       keyframes: {
         text: {
@@ -20,6 +20,15 @@ module.exports = {
           '50%': {
             'background-size': '200% 200%',
             'background-position': 'right'
+          },
+          moveDown: {
+            '80%': {
+              'opacity': '0.5'
+            },
+            '100%': {
+              'transform': 'translateY(2.3em)',
+              'opacity': '0'
+            }
           }
         }
       },
