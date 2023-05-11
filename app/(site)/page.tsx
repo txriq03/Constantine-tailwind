@@ -7,7 +7,8 @@ export default function Home() {
   return (
     <main className='relative'>
       <Container>
-        <div className='text-white text-[7.5rem] font-bold tracking-tighter mt-20 whitespace-nowrap max-3xl:mt-5 max-md:text-center max-md:text-[5rem] max-sm:text-[3.5rem]'>
+        <section className='h-[90vh] mt-20 max-3xl:mt-5 '>
+        <div className='text-white text-[7.5rem] font-bold tracking-tighter whitespace-nowrap max-md:text-center max-md:text-[5rem] max-sm:text-[3.5rem]'>
           <h1 >Drive with </h1>
           <h1 className='animate-text bg-gradient-to-r from-cyan-500 via-[#2ebf91] to-blue-500 bg-clip-text text-transparent bg-[400%] text-[9rem] -mt-20 -mb-5 max-md:text-[7rem] max-md:text-center max-md:-mt-14 max-sm:text-[5rem] max-sm:-mt-10 max-sm:-mb-1'>Awareness.</h1>
         </div>
@@ -25,7 +26,7 @@ export default function Home() {
 
                 {/*info icon */}
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className= "inline mx-1 w-6 h-6">
-                  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 01.67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 11-.671-1.34l.041-.022zM12 9a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+                  <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 01.67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 11-.671-1.34l.041-.022zM12 9a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
                 </svg>
 
               </span>
@@ -49,8 +50,8 @@ export default function Home() {
         </div>
 
 
-        
-        <div className=' absolute -z-10 bg-white rounded-full w-[1100px] h-[1100px] -right-[25rem] -top-[200px] 2xl:-right-[30rem] xl:-right-[35rem] lg:-right-[40rem] max-lg:hidden md:-right-[40rem] max-md:hidden '/>
+        {/*Hero image*/}
+        <div className=' absolute -z-10 bg-white rounded-tl-[100%] rounded-bl-[100%] rounded-tr-[100%] w-[1100px] h-[1100px] -right-[25rem] -top-[200px] 2xl:-right-[30rem] xl:-right-[35rem] lg:-right-[40rem] max-lg:hidden md:-right-[40rem] max-md:hidden '/>
         <Image className=' z-[10] object-contain w-70 h-auto absolute top-[15rem] -right-[20rem] max-2xl:-right-[30rem] max-xl:-right-[40rem] max-lg:-right-[50rem] 3xl:top-[16rem] 3xl:w-[1200px]' alt='car' priority src={sideview} height={1000} width={1000} />
         
         {/*Scroll down arrow*/}
@@ -59,8 +60,25 @@ export default function Home() {
           <path className="a2" d="M0 20 L30 52 L60 20"></path>
           <path className="a3" d="M0 40 L30 72 L60 40"></path>
         </svg>
-        <p className='absolute top-[85vh] text-[#ffffff] left-0 right-0 mx-auto w-[10rem] tracking-wider text-center'>SCROLL DOWN</p>
+        <p className='absolute top-[85vh] text-[#ffffff] left-0 right-0 mx-auto w-[10rem] cursor-pointer tracking-[0.2rem] text-center font-thin'>SCROLL DOWN</p>
+        </section>
 
+        <section className='h-[100vh]'>
+          <h1 className='text-white text-[4rem] '>About Us</h1>
+        </section>
+
+        <section className='h-[100vh]'>
+          <h1 className='text-white text-[4rem] '>Pricing</h1>
+        </section>
+
+        <section className='h-[100vh]'>
+          <h1 className='text-white text-[4rem] '>Contact</h1>
+        </section>
+        
+        <section className='h-[100vh]'>
+          <h1 className='text-white text-[4rem] '>Join us</h1>
+        </section>
+        
       </Container>
     </main>
   )
