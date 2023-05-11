@@ -8,15 +8,15 @@ export default function Home() {
     <main className='relative'>
       <Container>
         <section className='h-[90vh] mt-20 max-3xl:mt-5 '>
-        <div className='text-white text-[7.5rem] font-bold tracking-tighter whitespace-nowrap max-md:text-center max-md:text-[5rem] max-sm:text-[3.5rem]'>
+        <div className='text-white text-[7.5rem] font-bold tracking-tighter whitespace-nowrap max-lg:text-center max-md:text-[5rem] max-sm:text-[3.5rem]'>
           <h1 >Drive with </h1>
           <h1 className='animate-text bg-gradient-to-r from-cyan-500 via-[#2ebf91] to-blue-500 bg-clip-text text-transparent bg-[400%] text-[9rem] -mt-20 -mb-5 max-md:text-[7rem] max-md:text-center max-md:-mt-14 max-sm:text-[5rem] max-sm:-mt-10 max-sm:-mb-1'>Awareness.</h1>
         </div>
-        <p className='font-semibold text-slate-300 text-[1.8rem] tracking-tighter w-[45rem] mb-5 max-md:text-[1.5rem] max-md:text-center max-md:mx-auto max-md:w-[35rem] max-sm:text-[1rem] max-sm:w-[20rem]'>
+        <p className='font-semibold text-slate-300 text-[1.8rem] tracking-tighter w-[45rem] mb-5 max-md:text-[1.5rem] max-lg:text-center max-lg:mx-auto max-md:w-[35rem] max-sm:text-[1rem] max-sm:w-[20rem]'>
           Get yourself behind the wheel with the aid of our experienced driving instructors. You&apos;ll be able to pass your test with confidence.
         </p>
 
-        <div >
+        <div className='mx-auto max-lg:w-[400px] ' >
           {/*Buttons*/}
           <a href="#_" className="relative p-0.5 mb-10 inline-flex items-center justify-center font-semibold overflow-hidden group rounded-md">
             <span className="w-full h-full animate-text bg-gradient-to-br from-cyan-500 via-[#2ebf91] to-blue-500 group-hover:from-cyan-500 group-hover:via-[#2ebf91] group-hover:to-blue-500 absolute"></span>
@@ -52,7 +52,7 @@ export default function Home() {
 
         {/*Hero image*/}
         <div className=' absolute -z-10 bg-white rounded-tl-[100%] rounded-bl-[100%] rounded-tr-[100%] w-[1100px] h-[1100px] -right-[25rem] -top-[200px] 2xl:-right-[30rem] xl:-right-[35rem] lg:-right-[40rem] max-lg:hidden md:-right-[40rem] max-md:hidden '/>
-        <Image className=' z-[10] object-contain w-70 h-auto absolute top-[15rem] -right-[20rem] max-2xl:-right-[30rem] max-xl:-right-[40rem] max-lg:-right-[50rem] 3xl:top-[16rem] 3xl:w-[1200px]' alt='car' priority src={sideview} height={1000} width={1000} />
+        <Image className=' z-[10] object-contain w-70 h-auto absolute top-[15rem] -right-[20rem] max-2xl:-right-[30rem] max-xl:-right-[40rem] max-lg:hidden 3xl:top-[16rem] 3xl:w-[1200px]' alt='car' priority src={sideview} height={1000} width={1000} />
         
         {/*Scroll down arrow*/}
         <svg className="arrows">
@@ -60,7 +60,6 @@ export default function Home() {
           <path className="a2" d="M0 20 L30 52 L60 20"></path>
           <path className="a3" d="M0 40 L30 72 L60 40"></path>
         </svg>
-        <p className='absolute top-[85vh] text-[#ffffff] left-0 right-0 mx-auto w-[10rem] cursor-pointer tracking-[0.2rem] text-center font-thin'>SCROLL DOWN</p>
         </section>
 
         <section className='h-[100vh]'>
