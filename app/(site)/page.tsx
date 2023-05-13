@@ -62,20 +62,22 @@ export default function Home() {
         </svg>
         </section>
 
-        <section className='h-[100vh]'>
-          <h1 className='text-white text-[4rem] '>About Us</h1>
+        <section className='relative h-[100vh]'>
+          <h2 className='text-gray-400 font-semibold text-xl uppercase text-center '>Why choose us?</h2>
+          <h2 className='text-white text-[4rem] mt-[10] text-center '>Our Values</h2>
+          
         </section>
 
         <section className='h-[100vh]'>
-          <h1 className='text-white text-[4rem] '>Pricing</h1>
+          <h2 className='text-white text-[4rem] text-center'>Pricing</h2>
         </section>
 
         <section className='h-[100vh]'>
-          <h1 className='text-white text-[4rem] '>Contact</h1>
+          <h2 className='text-white text-[4rem] text-center'>Contact</h2>
         </section>
         
         <section className='h-[100vh]'>
-          <h1 className='text-white text-[4rem] '>Join us</h1>
+          <h2 className='text-white text-[4rem] text-center'>Join us</h2>
         </section>
         
       </Container>
