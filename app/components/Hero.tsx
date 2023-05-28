@@ -48,13 +48,13 @@ const Hero = () => {
 
 
         {/*Hero image*/}
-        <div className=' absolute -z-10 bg-white rounded-tl-[100%] rounded-bl-[100%] rounded-tr-[100%] w-[1100px] h-[1100px] -right-[25rem] -top-[200px] 2xl:-right-[30rem] xl:-right-[35rem] lg:-right-[40rem] max-lg:hidden md:-right-[40rem] max-md:hidden '/>
-        <Image className=' z-[10] object-contain w-70 h-auto absolute top-[15rem] -right-[20rem] max-2xl:-right-[30rem] max-xl:-right-[40rem] max-lg:hidden 3xl:top-[16rem] 3xl:w-[1200px]' alt='car' priority src={sideview} height={1000} width={1000} />
-        <div className='absolute w-[250px] h-[70px] bg-seagreen top-[150px] right-[340px] text-center rounded-lg shadow-[0_0px_12px_1px_rgba(0,0,0,0.3)] shadow-seagreen bg-gradient-to-br from-cyan-500 to-[#2ebf91] max-lg:hidden max-xl:right-[150px] '>
-            <p className='text-xl mt-4 text-white font-semibold'><span className='font-bold text-2xl'>10+</span> years experience</p>
+        <div className=' absolute -z-10 bg-white rounded-tl-[100%] rounded-bl-[100%] rounded-tr-[100%] w-[1100px] h-[1100px] -right-[25rem] -top-[200px] 2xl:-right-[30rem] 2xl:-top-[250px] xl:-top-[250px] xl:-right-[40rem]  max-xl:left-[85%] lg:-top-[300px] max-lg:hidden md:-right-[40rem] max-md:hidden  '/>
+        <Image className=' z-[10] object-contain w-70 h-auto absolute top-[15rem] -right-[20rem] max-2xl:-right-[30rem] max-xl:left-[75%] max-lg:hidden 3xl:top-[16rem] 3xl:w-[1200px]' alt='car' priority src={sideview} height={1000} width={1000} />
+        <div className='absolute w-[250px] h-[70px] bg-seagreen top-[150px] right-[340px] text-center rounded-lg shadow-[0_0px_12px_1px_rgba(0,0,0,0.3)] shadow-seagreen bg-gradient-to-br from-cyan-500 to-[#2ebf91] max-lg:hidden max-xl:right-[150px] max-2xl:right-[200px] max-2xl:top-[100px] max-xl:h-[50px] max-xl:w-[200px] max-xl:rounded-[5px]'>
+            <p className='text-xl mt-4 text-white font-semibold max-xl:text-sm max-xl:mt-2 '><span className='font-bold text-2xl max-xl:text-xl'>10+</span> years experience</p>
         </div>
-        <div className='absolute w-[250px] h-[70px] top-[650px] z-20 right-[50px] text-center rounded-lg bg-gradient-to-br from-cyan-500 to-[#2ebf91] shadow-[0_0px_12px_1px_rgba(0,0,0,0.3)] shadow-seagreen border-seagreen border-[1px] max-lg:hidden  '>
-            <p className='text-xl mt-5 text-white font-semibold'>hundreds of clients</p>
+        <div className='absolute w-[250px] h-[70px] top-[650px] z-20 right-[50px] text-center rounded-lg bg-gradient-to-br from-cyan-500 to-[#2ebf91] shadow-[0_0px_12px_1px_rgba(0,0,0,0.3)] shadow-seagreen border-seagreen border-[1px] max-lg:hidden max-xl:h-[50px] max-xl:w-[200px] max-xl:top-[200px] max-xl:rounded-[5px]  '>
+            <p className='text-xl mt-5 text-white font-semibold max-xl:text-sm max-xl:mt-3.5'>hundreds of clients</p>
         </div>
         {/* <div className='absolute w-[200px] h-[200px] bg-seagreen bg-gradient-to-br from-cyan-500 to-[#2ebf91] top-[100px] right-[500px] text-center rounded-full shadow-[0_0px_12px_1px_rgba(0,0,0,0.3)] shadow-seagreen '>
           <p className='text-white font-semibold text-2xl mt-10'><span className='block text-[3.5rem] font-bold mb-5'>10+</span> <span className='block'>years</span> experience</p>
