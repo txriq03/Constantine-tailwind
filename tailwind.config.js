@@ -43,7 +43,8 @@ module.exports = {
         orangepeel: '#ff9f1c'
       },
       screens: {
-        '3xl': '1600px'
+        '3xl': '1600px',
+        'smlaptop': '1265px'
       }
     },
   },
