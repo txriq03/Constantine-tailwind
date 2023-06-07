@@ -1,4 +1,4 @@
-import { BeakerIcon, ChartBarIcon, AcademicCapIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/solid'
+import { BeakerIcon, ChartBarIcon, AcademicCapIcon } from '@heroicons/react/24/solid'
 
 const About = () => {
   return (
