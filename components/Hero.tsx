@@ -4,21 +4,24 @@ import speedsign from '../assets/speedsign.png'
 
 const Hero = () => {
   return (
-    <section className='h-[90vh] mt-20 max-3xl:mt-5 '>
-        <div className='text-white text-[7.5rem] font-bold tracking-tighter whitespace-nowrap max-lg:text-center max-md:text-[5rem] max-sm:text-[3.5rem]'>
-          <h1 >Drive with </h1>
-          <h1 className='animate-text bg-gradient-to-r from-cyan-500 via-[#2ebf91] to-blue-500 bg-clip-text text-transparent bg-[400%] text-[9rem] -mt-20 -mb-5 max-md:text-[7rem] max-md:text-center max-md:-mt-14 max-sm:text-[5rem] max-sm:-mt-10 max-sm:-mb-1'>Awareness.</h1>
+    <section className='h-[90vh] mt-20 max-3xl:mt-5 max-sm:overflow-x-hidden'>
+        <div className='text-white text-[7.5rem] font-bold tracking-tighter whitespace-nowrap max-lg:text-center max-md:text-[5rem] max-sm:text-[5rem] max-sm:mt-[30px]'>
+          <h1 >
+            <span className='mx-[10px] max-sm:block max-sm:h-[80px] max-sm:align-middle' >Drive</span>  
+            <span className='mx-[10px]  max-sm:block max-sm:h-[130px]'>with</span>
+          </h1>
+          <h1 className='animate-text bg-gradient-to-r from-cyan-500 via-[#2ebf91] to-blue-500 bg-clip-text text-transparent bg-[400%] text-[9rem] -mt-20 -mb-5 max-md:text-[7rem] max-md:text-center max-md:-mt-14 max-sm:text-[5rem] '>Awareness.</h1>
         </div>
-        <p className='font-semibold text-slate-300 text-[1.8rem] tracking-tighter w-[45rem] mb-5 max-md:text-[1.5rem] max-lg:text-center max-lg:mx-auto max-md:w-[35rem] max-sm:text-[1rem] max-sm:w-[20rem]'>
+        <p className='max-sm:font-normal max-sm:text-xl max-sm:mt-[20px]  font-semibold text-gray-400 text-[1.8rem] tracking-tighter w-[45rem] mb-5 max-md:text-[1.5rem] max-lg:text-center max-lg:mx-auto max-md:w-[35rem] max-sm:text-[1rem] max-sm:w-[20rem]'>
           Get yourself behind the wheel with the aid of our experienced driving instructors. You&apos;ll be able to pass your test with confidence.
         </p>
 
-        <div className='mx-auto max-lg:w-[400px] ' >
+        <div className='mx-auto max-lg:text-center max-sm:flex-col-reverse' >
           {/*Buttons*/}
-          <a href="#_" className="relative p-0.5 mb-10 inline-flex items-center justify-center font-semibold overflow-hidden group rounded-md">
+          <button className="relative p-0.5 mr-2.5 inline-flex items-center justify-center font-semibold overflow-hidden group rounded-md">
             <span className="w-full h-full animate-text bg-gradient-to-br from-cyan-500 via-[#2ebf91] to-blue-500 group-hover:from-cyan-500 group-hover:via-[#2ebf91] group-hover:to-blue-500 absolute"></span>
-            <span className="relative px-6 py-3 transition-all ease-out bg-zinc-900 rounded-md group-hover:bg-opacity-0 duration-400">
-              <span className="relative text-white text-lg">
+            <span className="relative px-6 py-3 max-sm:py-2.5 max-sm:w-full transition-all ease-out bg-zinc-900 rounded-md group-hover:bg-opacity-0 duration-400">
+              <span className="relative text-white text-lg max-sm:text-base">
                 Learn more
 
                 {/*info icon */}
@@ -28,11 +31,11 @@ const Hero = () => {
 
               </span>
             </span>
-          </a>
+          </button>
 
-          <a href="#_" className="relative ml-5 inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+          <button className="relative ml-2.5 inline-flex items-center justify-center px-6 py-3 max-sm:py-2 max-sm:px-4 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
             <span className="w-48 h-48 rounded rotate-[-40deg] animate-text bg-gradient-to-br from-cyan-500 via-[#2ebf91] to-blue-500 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-            <span className="relative w-full text-center text-black transition-colors duration-300 ease-in-out group-hover:text-white text-xl">
+            <span className="relative w-full text-center text-black transition-colors duration-300 ease-in-out group-hover:text-white text-xl max-sm:text-lg">
               Start driving
 
               {/*Academy icon*/}
@@ -43,7 +46,7 @@ const Hero = () => {
               </svg>
 
             </span>
-          </a>
+          </button>
         </div>
 
 
@@ -56,9 +59,6 @@ const Hero = () => {
         <div className='absolute w-[250px] h-[70px] top-[650px] z-20 right-[50px] text-center rounded-lg bg-gradient-to-br from-cyan-500 to-[#2ebf91] shadow-[0_0px_12px_1px_rgba(0,0,0,0.3)] shadow-seagreen border-seagreen border-[1px] max-lg:hidden max-2xl:top-[200px] max-2xl:z-[2] max-xl:h-[50px] max-xl:w-[200px] max-xl:top-[170px] max-xl:rounded-[5px]  '>
             <p className='text-xl mt-5 text-white font-semibold max-xl:text-sm max-xl:mt-3.5'>hundreds of clients</p>
         </div>
-        {/* <div className='absolute w-[200px] h-[200px] bg-seagreen bg-gradient-to-br from-cyan-500 to-[#2ebf91] top-[100px] right-[500px] text-center rounded-full shadow-[0_0px_12px_1px_rgba(0,0,0,0.3)] shadow-seagreen '>
-          <p className='text-white font-semibold text-2xl mt-10'><span className='block text-[3.5rem] font-bold mb-5'>10+</span> <span className='block'>years</span> experience</p>
-        </div> */}
 
         {/*Scroll down arrow*/}
         <svg className="arrows">

@@ -68,3 +68,9 @@ body {
 	animation-delay:0s;
 	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
+
+@media screen and (max-width: 640px) {
+  .arrows {
+    display: none;
+  }
+}
